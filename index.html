@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Latest compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <title>IP Tracker</title>
+</head>
+<body>
+
+    <div class="ip-wrapper">
+
+        <div class="ip-header">
+            <div class="container">
+                <h1>IP Address Tracker</h1>
+                
+                <!-- the search button -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search for any IP address or domain" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><img src="images/icon-arrow.svg" alt="" class="ip-img-btn"></button>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <div id="mapid"></div>
+        <script src="js/map.js"></script>
+
+        <div class="ip-info">
+            <div class="containe ip-container">
+                <div class="ip-address">
+                    <span class="ip-small-head">ip address</span>
+                    <h2 class="ip-big-info">192.212.174.101</h2>
+                </div>
+                <div class="ip-location">
+                    <span class="ip-small-head">location</span>
+                    <h2 class="ip-big-info">Brooklyn, Ny 10001</h2>
+                </div>
+                <div class="timezone">
+                    <span class="ip-small-head">timezone</span>
+                    <h2 class="ip-big-info">utc -05:00</h2>
+                </div>
+                <div class="isp">
+                    <span class="ip-small-head">isp</span>
+                    <h2 class="ip-big-info">SpaceXStarlink</h2>
+                </div>
+            </div>
+           
+        </div>
+
+    </div>
+    
+    
+    
+
+    
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif !important;
+}
+
+.ip-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ip-header {
+  background: url("/images/pattern-bg.png") no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+
+.btn-outline-secondary {
+  background-color: #000000 !important;
+}
+
+.ip-info {
+  border: none;
+  background: #702e2e;
+  border-radius: 12px;
+  margin: 0 auto;
+  /* width: 80%; */
+  margin-top: -600px;
+  position: relative;
+  z-index: 2;
+}
+
+.ip-container {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: Center;
+}
+
+.ip-address,
+.ip-location,
+.timezone,
+.isp {
+  margin-top: 22px;
+}
+
+#mapid {
+  height: 480px;
+  z-index: 1;
+}
